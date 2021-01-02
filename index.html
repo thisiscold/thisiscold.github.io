@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
     rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css"
+    integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ=="
+    crossorigin="anonymous" />
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,7 +25,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"
+    integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA=="
+    crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
 </head>
@@ -51,28 +56,49 @@
   <!-- TODO: make it longer, spacing on the left of text -->
   <div class="container text-center">
     <p>slide to change the temperature</p>
-    <input id="tempSlider" type="text" data-slider-min="-5" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
-<span id="currentSliderValLabel">Current Slider Value: <span id="SliderVal">0</span></span>
+    <input id="tempSlider" type="text" data-slider-min="-5" data-slider-max="100" data-slider-step="1"
+      data-slider-value="0" />
+    <span id="currentSliderValLabel">Current Slider Value: <span id="SliderVal">0</span></span>
   </div>
 
   <!-- filler -->
   <div class="d-flex flex-row m-4">
-    <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
+    <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis
+      risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id
+      venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit
+      amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum
+      id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
       Elit ullamcorper dignissim cras tincidunt lobortis.</div>
-      <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
-        Elit ullamcorper dignissim cras tincidunt lobortis.</div>
+
+      <img src="https://loremflickr.com/320/240/1" alt="" id="img">
+
+    <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis
+      risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id
+      venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit
+      amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum
+      id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
+      Elit ullamcorper dignissim cras tincidunt lobortis.</div>
 
   </div>
 
 
 
-<script>
-  // note: planning to replace later, just for reference for now
-  var slider = new Slider("#tempSlider");
-slider.on("slide", function(sliderValue) {
-	document.getElementById("SliderVal").textContent = sliderValue;
-});
-</script>
+  <script>
+    // note: planning to replace later, just for reference for now
+    var slider = new Slider("#tempSlider");
+    var img = document.getElementById("img");
+    
+    // when slider is dragged...
+    slider.on("slide", function (sliderValue) {
+      document.getElementById("SliderVal").textContent = sliderValue;
+      if (sliderValue > 30) {
+      img.setAttribute("src", "https://loremflickr.com/320/240/" + sliderValue);
+    }
+    });
+
+  </script>
   <!-- <script>
         const rc = rough.canvas(document.getElementById('canvas'));
 rc.rectangle(10, 10, 200, 200); // x, y, width, height
