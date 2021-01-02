@@ -24,7 +24,10 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+  <!-- toggle link: https://gitbrent.github.io/bootstrap4-toggle/ -->
   <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  
+  <!-- slider link: https://github.com/seiyria/bootstrap-slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"
     integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA=="
     crossorigin="anonymous"></script>
@@ -69,9 +72,11 @@
       venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit
       amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum
       id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
-      Elit ullamcorper dignissim cras tincidunt lobortis.</div>
-
+      Elit ullamcorper dignissim cras tincidunt lobortis.
       <img src="https://loremflickr.com/320/240/1" alt="" id="img">
+    </div>
+
+      <!-- <img src="https://loremflickr.com/320/240/1" alt="" id="img"> -->
 
     <div class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
       et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis
@@ -81,10 +86,7 @@
       id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
       Elit ullamcorper dignissim cras tincidunt lobortis.</div>
 
-
   </div>
-
-
 
   <script>
     // note: planning to replace later, just for reference for now
@@ -99,6 +101,7 @@
     }
     });
 
+    // changing the toggle (written in jQuery bc **inconsistency**)
     $(function() {
     $('#toggled').change(function() {
       console.log('Toggle: ' + $(this).prop('checked'))
@@ -106,10 +109,7 @@
   })
 
   </script>
-  <!-- <script>
-        const rc = rough.canvas(document.getElementById('canvas'));
-rc.rectangle(10, 10, 200, 200); // x, y, width, height
-    </script> -->
+
 </body>
 
 </html>
