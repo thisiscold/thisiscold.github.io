@@ -81,6 +81,7 @@
       id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
       Elit ullamcorper dignissim cras tincidunt lobortis.</div>
 
+
   </div>
 
 
@@ -98,8 +99,11 @@
     }
     });
 
-    var isChecked=document.getElementById("toggled").checked;
-    // console.log(isChecked);
+    $(function() {
+    $('#toggled').change(function() {
+      console.log('Toggle: ' + $(this).prop('checked'))
+    })
+  })
 
   </script>
   <!-- <script>
