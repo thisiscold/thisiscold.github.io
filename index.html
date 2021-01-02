@@ -37,7 +37,7 @@
   <!-- toggle switch and about button -->
   <div class="d-flex justify-content-between m-3">
     <div class="toggle-switch">
-      <input type="checkbox" data-toggle="toggle" data-on="Normal Mode" data-off="Pandemic Mode" />
+      <input id="toggled" type="checkbox" data-toggle="toggle" data-width="180" data-height="75" data-on="Normal Mode" data-off="Pandemic Mode" />
       <!-- TODO: make longer so text doesnt stack -->
     </div>
     <button type="button" class="btn btn-primary">?</button>
@@ -97,6 +97,9 @@
       img.setAttribute("src", "https://loremflickr.com/320/240/" + sliderValue);
     }
     });
+
+    var isChecked=document.getElementById("toggled").checked;
+    // console.log(isChecked);
 
   </script>
   <!-- <script>
