@@ -67,12 +67,12 @@
   <!-- filler -->
   <div class="d-flex flex-row m-4">
     <figure>
-    <img class = "img-responsive img-style" src="assets/outfit1.jpg">
+    <img class = "img-responsive img-style" src="assets/StephBase.jpg" id = "img">
     <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
       Elit ullamcorper dignissim cras tincidunt lobortis.</figcaption>
     </figure>
     <figure>
-      <img class = "img-responsive img-style" src="assets/outfit1.jpg">
+      <img class = "img-responsive img-style" src="assets/JudyBase.jpeg" id = "img2">
       <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet volutpat consequat mauris nunc congue nisi vitae suscipit. Euismod lacinia at quis risus sed vulputate odio ut. Ornare aenean euismod elementum nisi quis eleifend quam. Nibh nisl condimentum id venenatis a. Vel pretium lectus quam id leo in vitae turpis. Adipiscing elit duis tristique sollicitudin nibh sit amet. Sapien pellentesque habitant morbi tristique senectus. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Euismod lacinia at quis risus sed vulputate odio ut enim.
         Elit ullamcorper dignissim cras tincidunt lobortis.</figcaption>
     </figure>
@@ -82,11 +82,48 @@
 
 
 <script>
-  // note: planning to replace later, just for reference for now
+
   var slider = new Slider("#tempSlider");
-slider.on("slide", function(sliderValue) {
-	document.getElementById("SliderVal").textContent = sliderValue;
-});
+     var img = document.getElementById("img");
+     var img2 = document.getElementById("img2");
+
+     // when slider is dragged...
+     slider.on("slide", function (sliderValue) {
+       document.getElementById("SliderVal").textContent = sliderValue;
+       if (sliderValue > 40) {
+       img.setAttribute("src", "assets/Steph40.jpg");
+       }
+       if (sliderValue > 50) {
+       img.setAttribute("src", "assets/Steph50.jpg");
+       if (sliderValue > 70) {
+        img.setAttribute("src", "assets/Steph70.jpg");
+       }
+       if (sliderValue > 80) {
+        img.setAttribute("src", "assets/Steph80.jpg");
+       }
+       // I have to fix the logic with the if statements
+       if (sliderValue > 0) {
+        img2.setAttribute("src", "assets/Judy0.jpeg");
+       }
+       if (sliderValue > 45) {
+        img2.setAttribute("src", "assets/Judy45.jpeg");
+       }
+       if (sliderValue > 75) {
+        img2.setAttribute("src", "assets/Judy75.jpeg");
+       }
+       if (sliderValue > 90) {
+        img2.setAttribute("src", "assets/Judy90.jpeg");
+       }
+     }
+     });
+
+     // changing the toggle (written in jQuery bc **inconsistency**)
+     $(function() {
+     $('#toggled').change(function() {
+       console.log('Toggle: ' + $(this).prop('checked'))
+     })
+   })
+   
 </script>
   <!-- <script>
         const rc = rough.canvas(document.getElementById('canvas'));
@@ -95,5 +132,3 @@ rc.rectangle(10, 10, 200, 200); // x, y, width, height
 </body>
 
 </html>
-
-<!-- hello -->
